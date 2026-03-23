@@ -1,4 +1,4 @@
-DEVICE_PATH := device/samsung/m12
+DEVICE_PATH := device/samsung/a21s
 
 # Architecture
 TARGET_ARCH := arm64
@@ -32,23 +32,22 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 
 # Screen
-#TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRX_8888"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 400
 TW_DEFAULT_BRIGHTNESS := 200
 TW_THEME := portrait_hdpi
-TW_FRAMERATE := 90
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1600
+TW_FRAMERATE := 60
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2408
 
 # Status Bar UI
 TW_STATUS_ICONS_ALIGN := center
-TW_CUSTOM_CPU_POS := "50"
-TW_CUSTOM_CLOCK_POS := "300"
-TW_CUSTOM_BATTERY_POS := "750"
-
+TW_CUSTOM_CPU_POS := "150"
+TW_CUSTOM_CLOCK_POS := "500"
+TW_CUSTOM_BATTERY_POS := "825"
 # Version
-TW_DEVICE_VERSION := SavedByLight M12
+TW_DEVICE_VERSION := SavedByLight a21s
 
 # Inherit from common tree
 include device/samsung/universal3830-common/BoardConfigCommon.mk

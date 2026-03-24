@@ -4,7 +4,7 @@ $(call inherit-product, device/samsung/universal3830-common/twrp_universal3830.m
 PRODUCT_DEVICE := a21s
 PRODUCT_NAME := twrp_a21s
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-M217F
+PRODUCT_MODEL := SM-A217F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
